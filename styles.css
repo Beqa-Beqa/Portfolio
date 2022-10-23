@@ -195,8 +195,15 @@ body {
 	grid-template-columns: 150px 115px 100px;
 }
 @media (max-width: 980px) {
-	#contact-section {
-		padding-bottom: 150px;
+	#welcome-section {
+		padding-bottom: 250px;
+	}
+	#welcome-section, #projects, #contact-section {
+		min-width: 100vw;
+		min-height: 100vh;
+	}
+	#projects-grid {
+		margin-right: 50vw;
 	}
 	#contact-div {
 		font-size: 24px;
