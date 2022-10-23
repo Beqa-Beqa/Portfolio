@@ -1,0 +1,204 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* reset */
+html {
+	scroll-behavior: smooth;
+}
+body {
+    font-family: "Poppins", sans-serif;
+	overflow-x: hidden;
+}
+.link-list {
+	display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+	text-align: center;
+	margin-right: 1rem;
+}
+.nav-link {
+	display: block;
+    text-decoration: none;
+    color: white;
+	font-size: 22px;
+	padding: 1.5rem;
+}
+.nav-link:hover {
+	background-color: rgb(53, 53, 105);
+}
+.centered-div {
+	position: relative;
+	top: 150px
+}
+.project-title {
+	display: block;
+	background-color: rgb(53, 53, 105);
+	color: white;
+	margin-top: -2px;
+	padding: 15px 0;
+	min-width: 320px;
+}
+.project-img {
+	min-width: 320px;
+	width: 35vw;
+	height: 100%;
+	object-fit: cover;
+	padding: 0 auto;
+}
+.project-img-a {
+	display: inline-block;
+	min-width: 320px;
+	width: 35vw;
+	margin-left: 5em;
+	max-height: 100%;
+}
+.code {
+	color: rgb(53, 53, 105);
+	transition: color .3s ease-out;
+}
+.contact-link {
+	text-decoration: none;
+	color: rgb(230, 227, 227);
+	transition: margin .3s ease-out;
+}
+.contact-link:hover {
+	margin-top: -10px;
+}
+#navbar {
+	position: fixed;
+	min-width: 330px;
+	width: 100%;
+	background-color: #BF3144;
+	z-index: 10;
+}
+#welcome-section {
+	text-align: center;
+	min-height:380px;
+	height: 100vmin;
+	background: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+	color: #BF3144;
+	line-height: 2.5em;
+}
+#identity {
+	color: whitesmoke;
+}
+#welcome-section h1 {
+	font-size: 64px;
+	font-weight: 600;
+	padding-bottom: .5em;
+}
+#welcome-section p {
+	font-size: 32px;
+	font-style: italic;
+	text-emphasis: open;
+	font-weight: 200;
+}
+#projects {
+	background-color: #45567D;
+	min-height: 100vmin;
+	text-align: center;
+	padding-bottom: 50px;
+}
+#projects h2 {
+	display: inline-block;
+	margin-top: 2.5em;
+	font-size: 36px;
+	font-weight: 600;
+	color: rgb(230, 227, 227);
+	border-bottom: 2px solid rgb(230, 227, 227);
+	padding-bottom: 12px;
+	margin-bottom: 1.5em;
+}
+#projects a {
+	text-decoration: none;
+}
+#projects-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	grid-gap: 4em;
+	width: 100%;
+	padding-bottom: 50px;
+}
+#projects-grid .project-img-a:hover .code, #projects-grid .project-title:hover .code {
+	color: orangered;
+}
+#contact-section {
+	background-color: #303841;
+	min-height: 100px;
+	height: calc(100vmin - 10vw - 200px);
+	color: rgb(230, 227, 227);
+	text-align: center;
+	padding-top: 10vw;
+	padding-bottom: 200px;
+}
+#contact-section h2 {
+	font-size: 60px;
+	font-weight: 500;
+	margin-bottom: .5em;
+}
+#contact-section p {
+	font-style: italic;
+	letter-spacing: .2em;
+	font-weight: 200;
+}
+#contact-div h3 {
+	display: inline;
+	margin: 0;
+}
+#contact-div {
+	margin: 20vh auto 0 auto;
+	padding-right: 35px;
+	max-width: 980px;
+	font-size: 36px;
+	display: grid;
+	justify-content: space-evenly;
+	grid-template-columns: 150px 115px 100px;
+}
+@media (max-width: 980px) {
+	#contact-section {
+		padding-bottom: 150px;
+	}
+	#contact-div {
+		font-size: 24px;
+	}
+}
