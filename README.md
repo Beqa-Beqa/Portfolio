@@ -4,6 +4,8 @@
    Welcome to my portfolio page. This app is made by "React" utilizing TS and
    SASS. It will allow you to discover more about me and see some of my projects as well.
    They aren't many and big ones but i think it's still worth mentioning.
+   <br/>
+   <strong>https://beqa-beqa.github.io/Portfolio/</strong>
 </p>
 <hr/>
 <h2>You will encounter in this project the following</h2>
