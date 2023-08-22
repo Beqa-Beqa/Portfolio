@@ -16,7 +16,7 @@ const App = () => {
     setWidth(newWidth);
   }
   // State to keep track of browser scrollY position
-  const [posY, setPosY] = useState<number>(window.scrollY);
+  const [, setPosY] = useState<number>(window.scrollY);
   // Scroll handler event that sets scroll position after scroll
   const handleScroll = () => {
     const newPos = window.scrollY;

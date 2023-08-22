@@ -67,7 +67,7 @@ const Projects = (props: {width: number}) => {
         </div>
         <div className="gap-1 mt-1">
           {
-            ProjectData.map((item, key) => {
+            ProjectData.map((_, key) => {
               return (
                 <span>
                   <button key={key} onClick={() => changeSlide(key)} className={activeProject === key ? "active radio-button br-rounded" : "radio-button br-rounded"}/>
