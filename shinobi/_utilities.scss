@@ -1,0 +1,298 @@
+@use "sass:math";
+
+$utilities: (
+  "padding": (
+    "prefix": "p",
+    "values": (
+      "0": 0,
+      "1": $base-padding,
+      "2": $base-padding * 2,
+      "3": $base-padding * 3,
+      "4": $base-padding * 4,
+      "5": $base-padding * 5
+    ),
+  ),
+  "padding-left": (
+    "prefix": "pl",
+    "values": (
+      "0": 0,
+      "1": $base-padding,
+      "2": $base-padding * 2,
+      "3": $base-padding * 3,
+      "4": $base-padding * 4,
+      "5": $base-padding * 5
+    ),
+  ),
+  "padding-right": (
+    "prefix": "pr",
+    "values": (
+      "0": 0,
+      "1": $base-padding,
+      "2": $base-padding * 2,
+      "3": $base-padding * 3,
+      "4": $base-padding * 4,
+      "5": $base-padding * 5
+    ),
+  ),
+  "padding-top": (
+    "prefix": "pt",
+    "values": (
+      "0": 0,
+      "1": $base-padding,
+      "2": $base-padding * 2,
+      "3": $base-padding * 3,
+      "4": $base-padding * 4,
+      "5": $base-padding * 5
+    ),
+  ),
+  "padding-bottom": (
+    "prefix": "pb",
+    "values": (
+      "0": 0,
+      "1": $base-padding,
+      "2": $base-padding * 2,
+      "3": $base-padding * 3,
+      "4": $base-padding * 4,
+      "5": $base-padding * 5
+    ),
+  ),
+  "margin": (
+    "prefix": "m",
+    "values": (
+      "0": 0,
+      "1": $base-padding,
+      "2": $base-padding * 2,
+      "3": $base-padding * 3,
+      "4": $base-padding * 4,
+      "5": $base-padding * 5
+    ),
+  ),
+  "margin-left": (
+    "prefix": "ml",
+    "values": (
+      "0": 0,
+      "1": $base-padding,
+      "2": $base-padding * 2,
+      "3": $base-padding * 3,
+      "4": $base-padding * 4,
+      "5": $base-padding * 5
+    ),
+  ),
+  "margin-right": (
+    "prefix": "mr",
+    "values": (
+      "0": 0,
+      "1": $base-padding,
+      "2": $base-padding * 2,
+      "3": $base-padding * 3,
+      "4": $base-padding * 4,
+      "5": $base-padding * 5
+    ),
+  ),
+  "margin-top": (
+    "prefix": "mt",
+    "values": (
+      "0": 0,
+      "1": $base-padding,
+      "2": $base-padding * 2,
+      "3": $base-padding * 3,
+      "4": $base-padding * 4,
+      "5": $base-padding * 5
+    ),
+  ),
+  "margin-bottom": (
+    "prefix": "mb",
+    "values": (
+      "0": 0,
+      "1": $base-padding,
+      "2": $base-padding * 2,
+      "3": $base-padding * 3,
+      "4": $base-padding * 4,
+      "5": $base-padding * 5
+    ),
+  ),
+  "opacity": (
+    "prefix": "o",
+    "values": (
+      "10": 0.1,
+      "20": 0.2,
+      "30": 0.3,
+      "40": 0.4,
+      "50": 0.5,
+      "60": 0.6,
+      "70": 0.7,
+      "80": 0.8,
+      "90": 0.9,
+    )
+  ),
+  "border-radius": (
+    "prefix": "br",
+    "values": (
+      "default": $base-border-radius,
+      "none": 0,
+      "xs": math.div($base-border-radius, 4),
+      "sm": math.div($base-border-radius, 2),
+      "md": $base-border-radius,
+      "lg": $base-border-radius * 2,
+      "rounded": 50%
+    )
+  ),
+  "display": (
+    "prefix": "d",
+    "values": (
+      "none": none,
+      "block": block,
+      "flex": flex,
+      "inline": inline,
+      "inline-block": inline-block
+    )
+  ),
+  "flex-direction": (
+    "prefix": "flex",
+    "values": (
+      "row": row,
+      "column": column
+    )
+  ),
+  "font-size": (
+    "prefix": "fs",
+    "values": (
+      "xs": math.div($base-font-size, 2),
+      "sm": $font-size-sm,
+      "md": $base-font-size,
+      "lg": $font-size-lg,
+      "xl": $font-size-xl,
+      "xxl": $font-size-xxl
+    )
+  ),
+  "line-height": (
+    "prefix": "lh",
+    "values": (
+      "0": 0,
+      "1": $base-line-height,
+      "2": $base-line-height * 1.5,
+      "3": $base-line-height * 2,
+      "4": $base-line-height * 3,
+      "5": $base-line-height * 4
+    )
+  ),
+  "width": (
+    "prefix": "w",
+    "values": (
+      "25": 25%,
+      "50": 50%,
+      "75": 75%,
+      "100": 100%
+    )
+  ),
+  "height": (
+    "prefix": "h",
+    "values": (
+      "25": 25%,
+      "50": 50%,
+      "75": 75%,
+      "100": 100%
+    )
+  ),
+  "text-align": (
+    "prefix": "text",
+    "values": (
+      "left": left,
+      "right": right,
+      "center": center,
+      "justify": justify
+    )
+  ),
+  "font-weight": (
+    "prefix": "fw",
+    "values": (
+      "100": 100,
+      "200": 200,
+      "300": 300,
+      "400": 400,
+      "500": 500,
+      "600": 600,
+      "700": 700,
+      "800": 800,
+    )
+  )
+);
+
+// generate utility classes
+@each $property, $map in $utilities {
+  $prefix: map-get($map, "prefix");
+  $values: map-get($map, "values");
+
+  @each $key, $value in $values {
+    @if($key == "default") {
+      .#{$prefix} {
+        #{$property}: $value;
+      }
+    } @else {
+      .#{$prefix}-#{$key} {
+        #{$property}: $value;
+      }
+    }
+  }
+}
+
+@for $val from 1 through 100 {
+  .z-#{$val} {
+    z-index: $val;
+  }
+}
+
+@include xs {
+  $font-sizes: map-get($utilities, "font-size");
+  $values: map-get($font-sizes, "values");
+  @each $key, $val in $values {
+    .fs-xs-#{$key} {
+      font-size: $val;
+    }
+  }
+}
+@include sm {
+  $font-sizes: map-get($utilities, "font-size");
+  $values: map-get($font-sizes, "values");
+  @each $key, $val in $values {
+    .fs-sm-#{$key} {
+      font-size: $val;
+    }
+  }
+}
+@include md {
+  $font-sizes: map-get($utilities, "font-size");
+  $values: map-get($font-sizes, "values");
+  @each $key, $val in $values {
+    .fs-md-#{$key} {
+      font-size: $val;
+    }
+  }
+}
+@include lg {
+  $font-sizes: map-get($utilities, "font-size");
+  $values: map-get($font-sizes, "values");
+  @each $key, $val in $values {
+    .fs-lg-#{$key} {
+      font-size: $val;
+    }
+  }
+}
+@include xl {
+  $font-sizes: map-get($utilities, "font-size");
+  $values: map-get($font-sizes, "values");
+  @each $key, $val in $values {
+    .fs-xl-#{$key} {
+      font-size: $val;
+    }
+  }
+}
+@include xxl {
+  $font-sizes: map-get($utilities, "font-size");
+  $values: map-get($font-sizes, "values");
+  @each $key, $val in $values {
+    .fs-xxl-#{$key} {
+      font-size: $val;
+    }
+  }
+}

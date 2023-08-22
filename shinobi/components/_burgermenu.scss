@@ -1,0 +1,28 @@
+@use "sass:math";
+
+.burger {
+  position: absolute;
+  top: 0;
+  right: 40px;
+  padding: $base-padding $base-padding * 2;
+  opacity: 0;
+  z-index: 100;
+  transition: .2s ease;
+  pointer-events: none;
+  border-radius: math.div($base-border-radius, 4);
+
+  li {
+    margin-bottom: $base-margin;
+  }
+  
+  li:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.burger.active {
+  opacity: 1;
+  top: 48px;
+  right: 40px;
+  pointer-events: initial;
+}

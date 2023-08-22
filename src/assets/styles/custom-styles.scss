@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+#about *::selection {
+  background-color: #1ac888;
+  color: white;
+}
+
+img {
+  pointer-events: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#burger {
+  width: 25px;
+  height: 25px;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.custom-nav {
+  position: fixed;
+  top: 0;
+  height: 56px;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  transition: background .2s;
+}
+
+.custom-nav ul li {
+  cursor: pointer;
+}
+
+.custom-margin {
+  margin-top: 3rem !important;
+  margin-bottom: 3rem !important;
+}
+
+#skills *::selection {
+  background-color: #e7ce7d !important;
+  color: white;
+}
+
+.web-name:hover {
+  cursor: pointer;
+}
+
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider img {
+  width: 100%;
+  height: auto;
+}
+
+.project-info {
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-mini-header {
+  font-family: "space mono", "poppins", sans-serif;
+}
+
+.radio-button {
+  cursor: pointer;
+  color: white;
+  width: 15px;
+  height: 15px;
+  transition: .2s;
+  border: none;
+  outline: none;
+  opacity: .5;
+}
+
+.radio-button.active {
+  background-color: purple;
+  box-shadow: .1px .1px 5px purple;
+  opacity: 1;
+}
+
+.contact-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.contact-link {
+  text-decoration: none;
+  transition: .2s;
+  &:hover {
+    opacity: .5;
+  }
+}
+
+.space-mono {
+  font-family: "space mono";
+}
+
+.custom-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.decoration-none {
+  text-decoration: none;
+}
+
+@media (min-width: 720px) {
+  .custom-margin {
+    margin-top: 7rem !important;
+    margin-bottom: 5rem !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .project-info {
+    min-height: 520px;
+  }
+
+  .custom-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@import "shinobi";

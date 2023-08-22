@@ -1,0 +1,22 @@
+@use "sass:math";
+
+.card {
+  display: block;
+  align-items: center;
+  padding: $base-padding;
+  border: $base-border-thickness solid #ddd;
+  box-shadow: 0 0 0 1px rgba(53,72,91,.07), 0 2px 2px rgba(0,0,0,.01), 0 4px 4px rgba(0,0,0,.02), 0 10px 8px rgba(0,0,0,.03), 0 15px 15px rgba(0,0,0,.03), 0 30px 30px rgba(0,0,0,.04), 0 70px 65px rgba(0,0,0,.05);
+  border-radius: math.div($base-border-radius, 2);
+  
+  .card-title {
+    font-size: $font-size-lg;
+    padding-bottom: $base-padding;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  .card-mini-header {
+    font-size: 11px;
+    color: rgba(0, 0, 0, 0.5);
+  }
+}

@@ -1,0 +1,70 @@
+@each $key, $val in $colors {
+  .text-#{$key} {
+    color: $val;
+  }
+  .bg-#{$key} {
+    background: $val;
+  }
+
+  // hover
+  .text-hover-#{$key} {
+    transition: .2s;
+    &:hover {
+      color: $val;
+    } 
+  }
+  .bg-hover-#{$key} {
+    transition: .2s;
+    &:hover {
+      background: $val;
+    }
+  }
+
+  @if($val != black and $val != white) {
+  // light variatons
+    @for $luminance from 1 through 9 {
+      .text-#{$key}-light-#{$luminance} {
+        color: mix(white, $val, $luminance * 10%);
+      }
+      .bg-#{$key}-light-#{$luminance} {
+        background: mix(white, $val, $luminance * 10%);
+      }
+
+      .text-hover-#{$key}-light-#{$luminance} {
+        transition: .2s;
+        &:hover {
+          color: mix(white, $val, $luminance * 10%);
+        } 
+      }
+
+      .bg-hover-#{key}-light-#{$luminance} {
+        transition: .2s;
+        &:hover {
+          color: mix(white, $val, $luminance * 10%);
+        }
+      }
+
+  // dark variations
+      .text-#{$key}-dark-#{$luminance} {
+        color: mix(black, $val, $luminance * 10%);
+      }
+      .bg-#{$key}-dark-#{$luminance} {
+        background: mix(black, $val, $luminance * 10%);
+      }
+
+      .text-hover-#{$key}-dark-#{$luminance} {
+        transition: .2s;
+        &:hover {
+          color: mix(black, $val, $luminance * 10%);
+        } 
+      }
+
+      .bg-hover-#{$key}-dark-#{$luminance} {
+        transition: .2s;
+        &:hover {
+          background: mix(black, $val, $luminance * 10%);
+        }
+      }
+    }
+  }
+}
