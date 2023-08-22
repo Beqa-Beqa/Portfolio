@@ -4,7 +4,7 @@ const AboutMe = () => {
       <div className="container pt-2 pb-2">
         <h3 className="fw-700 ml-2 fs-xs-lg mb-2">About me</h3>
         <p className="lh-2 mt-2">
-          Hello, I'm Beka Aladashvili, a passionate and ambitious web developer from Georgia. Currently, I'm pursuing my studies at the Informational Technologies faculty at BTU University. My journey into the world of programming started with an innate curiosity, and it was through JavaScript that I discovered my true passion for web development.
+          Hello, I'm Beka Aladashvili, a passionate and ambitious web developer from Georgia. Currently, I'm pursuing my studies at the Information Technologies faculty at BTU University. My journey into the world of programming started with an innate curiosity, and it was through JavaScript that I discovered my true passion for web development.
         </p>
         <h4 className="mt-2 fw-600">Experience and projects</h4>
         <p className="lh-2 mt-2">
