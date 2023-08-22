@@ -2,7 +2,7 @@
 <hr/>
 <p>
    Welcome to my portfolio page. This app is made by "React" utilizing TS and
-   SASS. It will allow you to discover more about me an see some of my projects as well.
+   SASS. It will allow you to discover more about me and see some of my projects as well.
    They aren't many and big ones but i think it's still worth mentioning.
 </p>
 <hr/>
