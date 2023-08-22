@@ -6,4 +6,4 @@
    They aren't many and big ones but i think it's still worth mentioning.
 </p>
 </hr>
-<span>Thanks for taking your time and visiting my webpage<span>
+<span>Thanks for taking your time and visiting my webpage.<span>
