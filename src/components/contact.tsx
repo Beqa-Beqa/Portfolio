@@ -28,7 +28,7 @@ const Contact = () => {
         <div>
           <h5 className="fs-xs-md fs-sm-lg mt-2 space-mono">Send an email</h5>
           <div className="d-flex flex-column">
-            <a href="mailto:bekarichman@gmail.com?subject=Job%20Offer" target="_blank" className="text-black contact-link mt-2 italic">
+            <a href="mailto:beka.aladashvili.383@gmail.com?subject=Job%20Offer" target="_blank" className="text-black contact-link mt-2 italic">
               <div className="d-flex align-center">
                 <AiOutlineMail className="contact-icon" /><span className="fw-600 fs-xs-sm fs-sm-md"> - beka.aladashvili.383@gmail.com</span>
               </div>
