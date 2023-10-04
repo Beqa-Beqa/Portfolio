@@ -30,7 +30,7 @@ const Contact = () => {
           <div className="d-flex flex-column">
             <a href="mailto:bekarichman@gmail.com?subject=Job%20Offer" target="_blank" className="text-black contact-link mt-2 italic">
               <div className="d-flex align-center">
-                <AiOutlineMail className="contact-icon" /><span className="fw-600 fs-xs-sm fs-sm-md"> - bekarichman@gmail.com</span>
+                <AiOutlineMail className="contact-icon" /><span className="fw-600 fs-xs-sm fs-sm-md"> - beka.aladashvili.383@gmail.com</span>
               </div>
             </a>
           </div>
